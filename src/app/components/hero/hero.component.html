@@ -1,12 +1,12 @@
 <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
   <!-- Animated Background -->
   <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-    <div class="absolute inset-0 opacity-20">
+    <div class="absolute inset-0 opacity-20 ">
       <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23374151&quot; fill-opacity=&quot;0.05&quot;><path d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/></g></g></svg>')"></div>
     </div>
   </div>
 
-  <div class="container mx-auto px-6 text-center relative z-10">
+<div class="container mx-auto px-6 text-center relative z-10 pt-20   md:pt-20">
     <div class="max-w-4xl mx-auto">
       <div class="animate-fade-in-up">
         <!-- Profile Image -->
@@ -38,7 +38,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-300">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-300 pb-4">
         <button
           (click)="scrollToSection('projects')"
           class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
@@ -54,11 +54,5 @@
     </div>
   </div>
 
-  <!-- Scroll Indicator -->
-  <button
-    (click)="scrollToNext()"
-    class="absolute bottom-3 left-1/2 transform -translate-x-1/2 text-gray-400 hover:text-white transition-colors duration-200 animate-bounce"
-  >
-    <lucide-icon name="arrow-down" [size]="24"></lucide-icon>
-  </button>
+
 </section>
