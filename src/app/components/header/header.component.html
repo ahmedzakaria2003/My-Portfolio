@@ -1,0 +1,93 @@
+<header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <div class="text-2xl font-bold text-white">
+        Ahmed<span class="text-blue-400">Dev</span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <button
+          *ngFor="let item of navItems"
+          (click)="scrollToSection(item.id)"
+          [class]="'text-sm font-medium transition-colors duration-200 hover:text-blue-400 ' + 
+                   (activeSection === item.id ? 'text-blue-400' : 'text-gray-300')"
+        >
+          {{ item.label }}
+        </button>
+      </nav>
+
+      <!-- Social Links -->
+      <div class="hidden md:flex items-center space-x-4">
+        <a
+          href="https://github.com/ahmedzakaria2003"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-300 hover:text-white transition-colors duration-200"
+        >
+          <lucide-icon name="github" [size]="20"></lucide-icon>
+        </a>
+        <a
+          href="https://linkedin.com/in/ahmed-zakaria-454aa8319"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-gray-300 hover:text-white transition-colors duration-200"
+        >
+          <lucide-icon name="linkedin" [size]="20"></lucide-icon>
+        </a>
+        <a
+          href="mailto:ahmedmohamedzakaria423@gmail.com"
+          class="text-gray-300 hover:text-white transition-colors duration-200"
+        >
+          <lucide-icon name="mail" [size]="20"></lucide-icon>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        (click)="toggleMenu()"
+        class="md:hidden text-white"
+      >
+        <lucide-icon [name]="isMenuOpen ? 'x' : 'menu'" [size]="24"></lucide-icon>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div *ngIf="isMenuOpen" class="md:hidden mt-4 pb-4 border-t border-gray-800">
+      <nav class="flex flex-col space-y-3 pt-4">
+        <button
+          *ngFor="let item of navItems"
+          (click)="scrollToSection(item.id)"
+          [class]="'text-left text-sm font-medium transition-colors duration-200 hover:text-blue-400 ' + 
+                   (activeSection === item.id ? 'text-blue-400' : 'text-gray-300')"
+        >
+          {{ item.label }}
+        </button>
+        <div class="flex items-center space-x-4 pt-4">
+          <a
+            href="https://github.com/ahmedzakaria2003"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-300 hover:text-white transition-colors duration-200"
+          >
+            <lucide-icon name="github" [size]="20"></lucide-icon>
+          </a>
+          <a
+            href="https://linkedin.com/in/ahmed-zakaria-454aa8319"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-300 hover:text-white transition-colors duration-200"
+          >
+            <lucide-icon name="linkedin" [size]="20"></lucide-icon>
+          </a>
+          <a
+            href="mailto:ahmedmohamedzakaria423@gmail.com"
+            class="text-gray-300 hover:text-white transition-colors duration-200"
+          >
+            <lucide-icon name="mail" [size]="20"></lucide-icon>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

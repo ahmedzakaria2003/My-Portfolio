@@ -1,0 +1,64 @@
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Animated Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23374151&quot; fill-opacity=&quot;0.05&quot;><path d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/></g></g></svg>')"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <div class="max-w-4xl mx-auto">
+      <div class="animate-fade-in-up">
+        <!-- Profile Image -->
+  <div class="mb-8 flex justify-center">
+  <div class="relative">
+    <div class="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-blue-400 shadow-2xl animate-float">
+      <img 
+        src="../../../assets/WhatsApp Image 2025-06-30 at 23.42.14_fdc6b89e.jpg" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="absolute -inset-1 bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full blur opacity-30 animate-pulse-slow"></div>
+  </div>
+</div>
+
+
+
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          Ahmed Mohamed Zakaria
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Full Stack Developer specializing in 
+          <span class="text-blue-400 font-semibold"> Angular</span> and 
+          <span class="text-emerald-400 font-semibold"> ASP.NET Core</span>
+        </p>
+        <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+          Building scalable, secure, and user-friendly web applications that make a real difference. 
+          Passionate about clean architecture, modern UI/UX, and innovative solutions.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-300">
+        <button
+          (click)="scrollToSection('projects')"
+          class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+        >
+          View My Work
+        </button>
+        <button class="border border-gray-600 text-gray-300 hover:text-white hover:border-gray-500 px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2">
+          <lucide-icon name="download" [size]="20"></lucide-icon>
+          <a href="../../../assets/Ahmed_Zakaria_Resume.pdf.pdf"> Download Resume</a>
+         
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <button
+    (click)="scrollToNext()"
+    class="absolute bottom-3 left-1/2 transform -translate-x-1/2 text-gray-400 hover:text-white transition-colors duration-200 animate-bounce"
+  >
+    <lucide-icon name="arrow-down" [size]="24"></lucide-icon>
+  </button>
+</section>

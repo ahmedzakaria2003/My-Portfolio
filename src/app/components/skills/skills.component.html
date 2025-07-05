@@ -1,0 +1,32 @@
+<section id="skills" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        Technical <span class="text-blue-400">Skills</span>
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        A comprehensive toolkit for building modern, scalable web applications
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div
+        *ngFor="let category of skillCategories"
+        class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-all duration-300 transform hover:scale-105"
+      >
+        <div [class]="'inline-flex p-3 rounded-lg mb-4 ' + getIconColorClasses(category.color)">
+          <lucide-icon [name]="category.icon" [size]="24"></lucide-icon>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-4">{{ category.title }}</h3>
+        <div class="flex flex-wrap gap-2">
+          <span
+            *ngFor="let skill of category.skills"
+            [class]="'px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 ' + getSkillColorClasses(category.color)"
+          >
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

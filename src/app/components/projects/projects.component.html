@@ -1,0 +1,118 @@
+<section id="projects" class="py-20 bg-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+        Featured <span class="text-blue-400">Projects</span>
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        Real-world applications showcasing modern development practices, clean architecture, and scalable solutions
+      </p>
+    </div>
+
+    <div class="space-y-16">
+      <div
+        *ngFor="let project of projects; let i = index"
+        [class]="'grid lg:grid-cols-2 gap-8 items-center ' + (i % 2 === 1 ? 'lg:grid-flow-col-dense' : '')"
+      >
+        <div [class]="i % 2 === 1 ? 'lg:col-start-2' : ''">
+          <div class="relative group">
+            <img
+              [src]="project.image"
+              [alt]="project.title"
+              class="w-full h-64 lg:h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4">
+                <div class="flex space-x-3">
+                  <a
+                    [href]="project.github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-gray-900/90 hover:bg-gray-800 text-white p-3 rounded-lg transition-all duration-200 hover:scale-110 flex items-center space-x-2"
+                    title="View Source Code"
+                  >
+                    <lucide-icon name="github" [size]="20"></lucide-icon>
+                    <span class="text-sm font-medium">Source Code</span>
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div [class]="i % 2 === 1 ? 'lg:col-start-1' : ''">
+          <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-gray-600 transition-colors duration-300">
+            <div [class]="'inline-flex p-3 rounded-lg mb-6 ' + getColorClasses(project.color).split(' ')[1]">
+              <lucide-icon [name]="project.icon" [size]="28"></lucide-icon>
+            </div>
+            
+            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">{{ project.title }}</h3>
+            <p class="text-gray-300 mb-6 leading-relaxed text-lg">{{ project.longDescription }}</p>
+
+            <div class="mb-6">
+              <h4 class="text-lg font-semibold text-white mb-3 flex items-center">
+                <span [class]="'w-2 h-2 rounded-full mr-3 ' + getColorClasses(project.color).split(' ')[1]"></span>
+                Key Features:
+              </h4>
+              <div class="grid md:grid-cols-2 gap-2">
+                <div *ngFor="let feature of project.features" class="text-gray-300 flex items-start">
+                  <span [class]="'w-1.5 h-1.5 rounded-full mt-2.5 mr-3 flex-shrink-0 ' + getColorClasses(project.color).split(' ')[1]"></span>
+                  <span class="text-sm">{{ feature }}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-white mb-3 flex items-center">
+                <span [class]="'w-2 h-2 rounded-full mr-3 ' + getColorClasses(project.color).split(' ')[1]"></span>
+                Technologies:
+              </h4>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  *ngFor="let tech of project.technologies"
+                  [class]="'px-3 py-1.5 rounded-full text-sm font-medium border transition-colors duration-200 hover:bg-opacity-10 ' + getColorClasses(project.color)"
+                >
+                  {{ tech }}
+                </span>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                [href]="project.github"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center space-x-2 hover:scale-105"
+              >
+                <lucide-icon name="github" [size]="20"></lucide-icon>
+                <span>View Source Code</span>
+              </a>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Projects Section -->
+    <div class="mt-20 text-center">
+      <div class="bg-gray-900 p-8 rounded-lg border border-gray-700">
+        <h3 class="text-2xl font-bold text-white mb-4">More Projects Coming Soon</h3>
+        <p class="text-gray-300 mb-6 max-w-2xl mx-auto">
+          I'm constantly working on new projects and exploring cutting-edge technologies. 
+          Check back regularly or follow me on GitHub to see my latest work.
+        </p>
+        <a
+          href="https://github.com/ahmedzakaria2003"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+        >
+          <lucide-icon name="github" [size]="20"></lucide-icon>
+          <span>View All Projects on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
