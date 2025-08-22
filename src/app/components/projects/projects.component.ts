@@ -20,8 +20,34 @@ interface Project {
 })
 export class ProjectsComponent {
   projects: Project[] = [
+    
     {
       id: 1,
+      title: 'Full-Stack Real-Time Auction System',
+      description: 'Advanced real-time auction platform with live bidding, secure payments, and comprehensive role-based management.',
+      longDescription: 'Developed a sophisticated full-stack real-time auction platform using .NET 8 (backend) and Angular 18 (frontend). The system features real-time bidding capabilities with SignalR for instant updates and synchronized countdown timers. Integrated secure payment processing with Stripe for deposits and final payments, while implementing robust authentication using JWT + Refresh Tokens and 2FA (OTP) for enhanced security. The platform supports comprehensive Role-Based Access Control for Bidders, Sellers, and Administrators with advanced search and filtering capabilities.',
+      icon: 'gavel',
+      image: '../../../assets/Screenshot 2025-08-22 192449.png',
+      technologies: ['Angular 18', '.NET 8', 'SignalR', 'EF Core', 'Redis', 'Stripe', 'JWT', 'Bootstrap', '2FA (OTP)', 'Onion Architecture'],
+      features: [
+        'Real-time bidding with SignalR integration',
+        'Synchronized countdown timers across clients',
+        'Secure Stripe payment processing',
+        'JWT + Refresh Tokens authentication',
+        'Two-Factor Authentication (2FA/OTP)',
+        'Role-Based Access Control (Bidder/Seller/Admin)',
+        'Advanced search and filtering system',
+        'Lazy loading for optimal performance',
+        'Redis caching for improved speed',
+        'Responsive Bootstrap UI design',
+        'Repository & Unit of Work patterns',
+        'Specification Pattern for efficient queries'
+      ],
+      github: 'https://github.com/ahmedzakaria2003/Auction-System',
+      color: 'gold'
+    },
+{
+      id: 2,
       title: 'Full-Stack E-Commerce Platform',
       description: 'Comprehensive e-commerce platform built with .NET 8 and Angular, featuring Onion Architecture for clean separation of concerns.',
       longDescription: 'Developed a full-stack e-commerce platform using .NET 8 (Onion Architecture) and Angular, supporting a clean separation of concerns across layers. Integrated SQL Server and Redis for persistent and cache storage, and implemented secure payment processing with Stripe. Followed best practices using Repository, Unit of Work, and Specification patterns, with enhanced UX through custom middleware and toast notifications.',
@@ -44,7 +70,7 @@ export class ProjectsComponent {
       color: 'blue'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Gunners Store - Themed Fan Merchandise Platform',
       description: 'Arsenal FC themed merchandise platform built with ASP.NET Core MVC, featuring role-based access and real-time order tracking.',
       longDescription: 'Designed and developed a fan-themed merchandise web app inspired by Arsenal FC, using ASP.NET Core MVC and SQL Server. The platform supports role-based access (Admin/Customer), Stripe-based secure payments, and a responsive UI built with Bootstrap. Followed a clean N-Tier architecture with Unit of Work pattern for maintainability. Core features include product management, real-time order tracking, and reusable Partial Views.',
@@ -71,7 +97,9 @@ export class ProjectsComponent {
   getColorClasses(color: string): string {
     const colors: { [key: string]: string } = {
       blue: 'border-blue-400 bg-blue-500 text-blue-400',
-      emerald: 'border-emerald-400 bg-emerald-500 text-emerald-400'
+      emerald: 'border-emerald-400 bg-emerald-500 text-emerald-400',
+          gold: 'border-yellow-400 bg-yellow-500 text-yellow-400' 
+
     };
     return colors[color] || colors['blue'];
   }

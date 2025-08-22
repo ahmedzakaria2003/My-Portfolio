@@ -24,7 +24,7 @@ export class SkillsComponent {
       icon: 'layers',
       title: 'Backend Development',
       color: 'emerald',
-      skills: ['C#', '.NET', 'Entity Framework Core', 'LINQ', 'RESTful APIs', 'MVC', 'IIS']
+      skills: ['C#', '.NET', 'Entity Framework Core', 'LINQ', 'RESTful APIs', 'MVC']
     },
     {
       icon: 'database',
@@ -48,7 +48,7 @@ export class SkillsComponent {
       icon: 'git-branch',
       title: 'Architecture & Patterns',
       color: 'pink',
-      skills: ['Repository Pattern', 'Specification Pattern', 'CQRS Principles']
+      skills: ['Repository Pattern', 'Specification Pattern']
     }
   ];
 
