@@ -42,13 +42,13 @@ export class SkillsComponent {
       icon: 'cloud',
       title: 'Payment & Integration',
       color: 'cyan',
-      skills: ['Stripe']
+      skills: ['Stripe' ,'Mada']
     },
     {
       icon: 'git-branch',
       title: 'Architecture & Patterns',
       color: 'pink',
-      skills: ['Repository Pattern', 'Specification Pattern']
+      skills: ['Repository Pattern', 'Specification Pattern','CQRS Pattern']
     }
   ];
 
