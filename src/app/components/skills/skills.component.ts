@@ -66,12 +66,12 @@ export class SkillsComponent {
 
   getSkillColorClasses(color: string): string {
     const colors: { [key: string]: string } = {
-      blue: 'bg-blue-500/20 border border-blue-400/50 text-blue-100 hover:bg-blue-500/30 hover:border-blue-400',
-      emerald: 'bg-emerald-500/20 border border-emerald-400/50 text-emerald-100 hover:bg-emerald-500/30 hover:border-emerald-400',
-      orange: 'bg-orange-500/20 border border-orange-400/50 text-orange-100 hover:bg-orange-500/30 hover:border-orange-400',
-      purple: 'bg-purple-500/20 border border-purple-400/50 text-purple-100 hover:bg-purple-500/30 hover:border-purple-400',
-      cyan: 'bg-cyan-500/20 border border-cyan-400/50 text-cyan-100 hover:bg-cyan-500/30 hover:border-cyan-400',
-      pink: 'bg-pink-500/20 border border-pink-400/50 text-pink-100 hover:bg-pink-500/30 hover:border-pink-400'
+      blue: 'bg-blue-500/20 border border-blue-400/50 text-white hover:bg-blue-500/30 hover:border-blue-400',
+      emerald: 'bg-emerald-500/20 border border-emerald-400/50 text-white hover:bg-emerald-500/30 hover:border-emerald-400',
+      orange: 'bg-orange-500/20 border border-orange-400/50 text-white hover:bg-orange-500/30 hover:border-orange-400',
+      purple: 'bg-purple-500/20 border border-purple-400/50 text-white hover:bg-purple-500/30 hover:border-purple-400',
+      cyan: 'bg-cyan-500/20 border border-cyan-400/50 text-white hover:bg-cyan-500/30 hover:border-cyan-400',
+      pink: 'bg-pink-500/20 border border-pink-400/50 text-white hover:bg-pink-500/30 hover:border-pink-400'
     };
     return colors[color] || colors['blue'];
   }
