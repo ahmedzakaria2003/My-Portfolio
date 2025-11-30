@@ -96,10 +96,9 @@ export class ProjectsComponent {
 
   getColorClasses(color: string): string {
     const colors: { [key: string]: string } = {
-      blue: 'border-blue-400 bg-blue-500 text-blue-400',
-      emerald: 'border-emerald-400 bg-emerald-500 text-emerald-400',
-          gold: 'border-yellow-400 bg-yellow-500 text-yellow-400' 
-
+      blue: 'border-blue-400 bg-blue-500 text-white',
+      emerald: 'border-emerald-400 bg-emerald-500 text-white',
+      gold: 'border-yellow-400 bg-yellow-500 text-white'
     };
     return colors[color] || colors['blue'];
   }
