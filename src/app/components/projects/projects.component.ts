@@ -25,10 +25,10 @@ export class ProjectsComponent {
       id: 1,
       title: 'Full-Stack Real-Time Auction System',
       description: 'Advanced real-time auction platform with live bidding, secure payments, and comprehensive role-based management.',
-      longDescription: 'Developed a sophisticated full-stack real-time auction platform using .NET 8 (backend) and Angular 18 (frontend). The system features real-time bidding capabilities with SignalR for instant updates and synchronized countdown timers. Integrated secure payment processing with Stripe for deposits and final payments, while implementing robust authentication using JWT + Refresh Tokens and 2FA (OTP) for enhanced security. The platform supports comprehensive Role-Based Access Control for Bidders, Sellers, and Administrators with advanced search and filtering capabilities.',
+      longDescription: 'Developed a sophisticated full-stack real-time auction platform using ASP.NET Core (backend) and Angular (frontend). The system features real-time bidding capabilities with SignalR for instant updates and synchronized countdown timers. Integrated secure payment processing with Stripe for deposits and final payments, while implementing robust authentication using JWT + Refresh Tokens and 2FA (OTP) for enhanced security. The platform supports comprehensive Role-Based Access Control for Bidders, Sellers, and Administrators with advanced search and filtering capabilities.',
       icon: 'gavel',
       image: '../../../assets/Screenshot 2025-08-22 192449.png',
-      technologies: ['Angular 18', '.NET 8', 'SignalR', 'EF Core', 'Redis', 'Stripe', 'JWT', 'Bootstrap', '2FA (OTP)', 'Onion Architecture'],
+      technologies: ['Angular', 'ASP.NET Core', 'SignalR', 'EF Core', 'Redis', 'Stripe', 'JWT', 'Bootstrap', '2FA (OTP)', 'Clean Architecture'],
       features: [
         'Real-time bidding with SignalR integration',
         'Synchronized countdown timers across clients',
@@ -49,11 +49,11 @@ export class ProjectsComponent {
 {
       id: 2,
       title: 'Full-Stack E-Commerce Platform',
-      description: 'Comprehensive e-commerce platform built with .NET 8 and Angular, featuring Onion Architecture for clean separation of concerns.',
-      longDescription: 'Developed a full-stack e-commerce platform using .NET 8 (Onion Architecture) and Angular, supporting a clean separation of concerns across layers. Integrated SQL Server and Redis for persistent and cache storage, and implemented secure payment processing with Stripe. Followed best practices using Repository, Unit of Work, and Specification patterns, with enhanced UX through custom middleware and toast notifications.',
+      description: 'Comprehensive e-commerce platform built with ASP.NET Core and Angular, featuring Clean Architecture for clean separation of concerns.',
+      longDescription: 'Developed a full-stack e-commerce platform using ASP.NET Core (Clean Architecture) and Angular, supporting a clean separation of concerns across layers. Integrated SQL Server and Redis for persistent and cache storage, and implemented secure payment processing with Stripe. Followed best practices using Repository, Unit of Work, and Specification patterns, with enhanced UX through custom middleware and toast notifications.',
       icon: 'shopping-cart',
       image: '../../../assets/Screenshot 2025-07-04 231128.png',
-      technologies: ['.NET 8', 'Angular', 'SQL Server', 'Redis', 'Stripe', 'JWT', 'Onion Architecture'],
+      technologies: ['ASP.NET Core', 'Angular', 'SQL Server', 'Redis', 'Stripe', 'JWT', 'Clean Architecture'],
       features: [
         'Multi-step checkout process',
         'Product filtering and search functionality',

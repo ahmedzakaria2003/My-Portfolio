@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LucideAngularModule, Menu, X, Github, Linkedin, Mail, ArrowDown, Download, 
+import { LucideAngularModule, Menu, X, Github, Linkedin, Mail, ArrowDown, ArrowUp, Download, 
          GraduationCap, Code, Award, MapPin, Database, Cloud, Shield, GitBranch, 
          Layers, ExternalLink, ShoppingCart, Gavel, Send, Phone, MessageCircle, Heart } from 'lucide-angular';
 
@@ -34,7 +34,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
     AppRoutingModule,
     ReactiveFormsModule,
     LucideAngularModule.pick({
-      Menu, X, Github, Linkedin, Mail, ArrowDown, Download, GraduationCap, 
+      Menu, X, Github, Linkedin, Mail, ArrowDown, ArrowUp, Download, GraduationCap, 
       Code, Award, MapPin, Database, Cloud, Shield, GitBranch, Layers, 
       ExternalLink, ShoppingCart, Gavel, Send, Phone, MessageCircle, Heart
     })

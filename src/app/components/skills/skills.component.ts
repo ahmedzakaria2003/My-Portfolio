@@ -18,37 +18,37 @@ export class SkillsComponent {
       icon: 'code',
       title: 'Frontend Development',
       color: 'blue',
-      skills: ['Angular 18', 'TypeScript', 'HTML5/CSS3', 'Bootstrap', 'jQuery', 'JavaScript', 'ngx-bootstrap', 'RxJS', 'Font-Awesome', 'Toastr', 'ngx-spinner']
+      skills: ['Angular', 'Angular Signals', 'Nx Monorepo', 'NgRx', 'RxJS & Observables', 'TypeScript', 'HTML5/CSS3', 'Bootstrap', 'ngx-bootstrap', 'Font-Awesome', 'Toastr', 'ngx-spinner']
     },
     {
       icon: 'layers',
       title: 'Backend Development',
       color: 'emerald',
-      skills: ['C#', '.NET', 'Entity Framework Core', 'LINQ', 'RESTful APIs', 'MVC']
+      skills: ['C#', '.NET', 'ASP.NET Core', 'Dapper', 'Entity Framework Core', 'SignalR', 'LINQ', 'RESTful APIs', 'MVC']
     },
     {
       icon: 'database',
-      title: 'Database & Storage',
+      title: 'Database & Caching',
       color: 'orange',
-      skills: ['SQL Server', 'Redis']
+      skills: ['SQL Server', 'Redis', 'SQL Query Optimization', 'Indexing & Execution Plans']
     },
     {
       icon: 'shield',
-      title: 'Authentication',
+      title: 'Authentication & Security',
       color: 'purple',
-      skills: ['.NET Core Identity', 'JWT']
+      skills: ['ASP.NET Core Identity', 'JWT', '2FA (OTP)', 'Role-Based Access Control (RBAC)']
     },
     {
       icon: 'cloud',
       title: 'Payment & Integration',
       color: 'cyan',
-      skills: ['Stripe' ,'Mada']
+      skills: ['Stripe', 'Mada']
     },
     {
       icon: 'git-branch',
       title: 'Architecture & Patterns',
       color: 'pink',
-      skills: ['Repository Pattern', 'Specification Pattern','CQRS Pattern']
+      skills: ['Clean Architecture', 'CQRS Pattern', 'Factory Pattern', 'Strategy Pattern', 'Repository Pattern', 'Unit of Work Pattern', 'Specification Pattern']
     }
   ];
 
