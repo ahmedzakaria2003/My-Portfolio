@@ -61,7 +61,7 @@ export class ContactComponent implements OnInit {
     {
       icon: 'linkedin',
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/ahmed-zakaria-454aa8319',
+      url: 'https://www.linkedin.com/in/ahmed-zakaria-454aa8319',
       color: 'blue'
     },
     {

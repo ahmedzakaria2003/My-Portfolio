@@ -18,7 +18,7 @@ export class SkillsComponent {
       icon: 'code',
       title: 'Frontend Development',
       color: 'blue',
-      skills: ['Angular', 'Angular Signals', 'Nx Monorepo', 'NgRx', 'RxJS & Observables', 'TypeScript', 'HTML5/CSS3', 'Bootstrap', 'ngx-bootstrap', 'Font-Awesome', 'Toastr', 'ngx-spinner']
+      skills: ['Angular', 'Angular Signals', 'Nx Monorepo', 'NgRx', 'RxJS & Observables', 'ngx-translate (i18n)', 'TypeScript', 'HTML5/CSS3', 'Bootstrap', 'ngx-bootstrap', 'Font-Awesome', 'Toastr', 'ngx-spinner']
     },
     {
       icon: 'layers',
@@ -30,7 +30,7 @@ export class SkillsComponent {
       icon: 'database',
       title: 'Database & Caching',
       color: 'orange',
-      skills: ['SQL Server', 'Redis', 'SQL Query Optimization', 'Indexing & Execution Plans']
+      skills: ['PostgreSQL', 'SQL Server', 'Redis', 'SQL Query Optimization', 'Indexing & Execution Plans']
     },
     {
       icon: 'shield',
@@ -43,6 +43,12 @@ export class SkillsComponent {
       title: 'Payment & Integration',
       color: 'cyan',
       skills: ['Stripe', 'Mada']
+    },
+    {
+      icon: 'activity',
+      title: 'Logging & Resilience',
+      color: 'emerald',
+      skills: ['Serilog (Structured Logging)', 'NLog', 'Background Services']
     },
     {
       icon: 'git-branch',

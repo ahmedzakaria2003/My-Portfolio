@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { LucideAngularModule, Menu, X, Github, Linkedin, Mail, ArrowDown, ArrowUp, Download, 
          GraduationCap, Code, Award, MapPin, Database, Cloud, Shield, GitBranch, 
-         Layers, ExternalLink, ShoppingCart, Gavel, Send, Phone, MessageCircle, Heart } from 'lucide-angular';
+         Layers, ExternalLink, ShoppingCart, Gavel, Send, Phone, MessageCircle, Heart, Activity,
+         BookOpen, CheckCircle2, Star, Sparkles, Clock, Users, Check, PhoneCall, HelpCircle, PenTool, CheckSquare } from 'lucide-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,10 +34,12 @@ import { ExperienceComponent } from './components/experience/experience.componen
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     LucideAngularModule.pick({
       Menu, X, Github, Linkedin, Mail, ArrowDown, ArrowUp, Download, GraduationCap, 
       Code, Award, MapPin, Database, Cloud, Shield, GitBranch, Layers, 
-      ExternalLink, ShoppingCart, Gavel, Send, Phone, MessageCircle, Heart
+      ExternalLink, ShoppingCart, Gavel, Send, Phone, MessageCircle, Heart, Activity,
+      BookOpen, CheckCircle2, Star, Sparkles, Clock, Users, Check, PhoneCall, HelpCircle, PenTool, CheckSquare
     })
   ],
   providers: [],
